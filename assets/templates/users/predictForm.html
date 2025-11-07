@@ -1,0 +1,87 @@
+{% extends 'users/userbase.html' %}
+{% block contents %}
+
+<!DOCTYPE html>
+  <html>
+  <style>
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .formDiv {
+    margin: 0 200px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  </style>
+
+<body>
+    <div class="formDiv">
+<h2 align="center" style="color:rgb(50, 19, 190);font-weight:bold;">prediction: {{ msg }}</h2>
+<form action="" method="POST">
+    {% csrf_token %}
+<center>
+
+    <label>employee_id:</label>
+    <input type="text" id="employee_id" name="employee_id" required><br>
+
+    <label>department:</label>
+    <input type="text" id="department" name="department" required><br>
+
+    <label>region:</label>
+    <input type="text" id="region" name="region" required><br>
+
+    <label>education:</label>
+    <input type="text" id="education" name="education" required><br>
+
+    <label>gender:</label>
+    <input type="text" id="gender" name="gender" required><br>
+
+    <label>recruitment_channel:</label>
+    <input type="text" id="recruitment_channel" name="recruitment_channel" required><br>
+
+    <label>no_of_trainings:</label>
+    <input type="text" id="no_of_trainings" name="no_of_trainings" required><br>
+
+    <label>age:</label>
+    <input type="text" id="age" name="age" required><br>
+
+    <label>previous_year_rating:</label>
+    <input type="text" id="previous_year_rating" name="previous_year_rating" required><br>
+
+    <label>length_of_service:</label>
+    <input type="text" id="length_of_service" name="length_of_service" required><br>
+
+    <label>awards_won:</label>
+    <input type="text" id="awards_won" name="awards_won" required><br>
+
+    <label>avg_training_score:</label>
+    <input type="text" id="avg_training_score" name="avg_training_score" required><br>
+
+    <input type="submit" value="submit">
+</center>
+</div>
+</body>
+</html>
+
+{% endblock %}
