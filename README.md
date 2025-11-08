@@ -56,4 +56,33 @@ Each model was trained, evaluated, and compared to determine the best-performing
 ---
 
 ## 📁 Folder Structure
-
+Employee_Promotion_Prediction/
+│
+├── data/ # Dataset files (raw and processed)
+│ ├── train.csv
+│ ├── test.csv
+│
+├── notebooks/ # Jupyter notebooks for analysis & model training
+│ ├── 01_Data_Exploration.ipynb
+│ ├── 02_Model_Training.ipynb
+│ ├── 03_Model_Evaluation.ipynb
+│
+├── src/ # Python scripts used for the project
+│ ├── data_preprocessing.py # Handles missing values, encoding, scaling, etc.
+│ ├── feature_selection.py # Selects important features
+│ ├── model_training.py # Trains Random Forest, SVM, Logistic Regression
+│ ├── model_evaluation.py # Evaluates models using metrics and visualizations
+│
+├── models/ # Saved trained models
+│ ├── random_forest_model.pkl
+│ ├── svm_model.pkl
+│ ├── logistic_regression_model.pkl
+│
+├── results/ # Evaluation results and visualizations
+│ ├── confusion_matrix.png
+│ ├── classification_report.txt
+│ ├── accuracy_comparison.png
+│
+├── requirements.txt # Dependencies for the project
+├── README.md # Project documentation
+└── main.py # Main script to run the prediction pipeline
