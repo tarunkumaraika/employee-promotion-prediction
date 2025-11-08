@@ -86,3 +86,28 @@ Employee_Promotion_Prediction/
 ├── requirements.txt # Dependencies for the project
 ├── README.md # Project documentation
 └── main.py # Main script to run the prediction pipeline
+
+
+
+---
+
+## 🔗 Model File
+
+Due to GitHub’s file size limits, the trained model (`best_model.pkl`) is tracked using **Git LFS**.  
+Alternatively, you can download it from:  
+➡️ [Google Drive Link Here]([https://drive.google.com/](https://drive.google.com/file/d/1Db2mqDXVLzlFSiBQonqZqXOTYl7yT3rl/view?usp=sharing)) 
+
+---
+
+## 👨‍💻 Author
+
+**AIKA Tarun Kumar**  
+📍 Eluru, Andhra Pradesh  
+📧 [tarunkumartakshye833@gmail.com](mailto:tarunkumartakshye833@gmail.com)  
+📱 +91 9381057706  
+🔗 [GitHub Profile](https://github.com/tarunkumaraika)
+
+---
+
+⭐ *If you like this project, please give it a star on GitHub!*
+
